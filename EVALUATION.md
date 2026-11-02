@@ -27,3 +27,5 @@ Models: Gemini chat model gemini-3.5-flash-lite, embedding model gemini-embeddin
 - Gemini sometimes cited chunk numbers as if they were page numbers; the prompt was updated to cite pages only.
 - The vector search's built-in similarity threshold did not filter reliably, so scores are also checked in Java.
 - Scanned PDFs are not supported.
+## Live demo
+ Deployed on Render (Docker) with Neon PostgreSQL + pgvector. Requests need an `X-API-Key` header (available on request). The first request after idle takes about a minute because the free instance sleeps.
